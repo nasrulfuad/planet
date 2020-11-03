@@ -1,0 +1,326 @@
+@font-face {
+  font-family: "AlphaCentauri";
+  src: url("/assets/fonts/Alphacentauri-MVY4p.ttf");
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+  font-family: "Roboto";
+  list-style: none;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  background-color: #000;
+}
+
+nav {
+  position: fixed;
+  z-index: 180;
+  height: 8vh;
+  width: 96%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 10px 30px;
+}
+
+nav .nav__links ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+nav .nav__links ul li {
+  padding: 0 4px;
+  list-style: none;
+}
+
+nav .nav__links ul li img {
+  -webkit-transform: scale(0.45);
+          transform: scale(0.45);
+}
+
+.logo {
+  color: #fff;
+  font-weight: 600;
+  font-size: 16px;
+}
+
+section {
+  height: 100vh;
+  overflow: hidden;
+}
+
+.bg img {
+  width: 110vw;
+  height: 110vh;
+  -webkit-filter: brightness(0.6);
+          filter: brightness(0.6);
+}
+
+.rock1 {
+  position: absolute !important;
+  left: 10vw !important;
+  top: 20vh !important;
+}
+
+.rock1 img {
+  width: 40%;
+  -webkit-filter: brightness(0.5);
+          filter: brightness(0.5);
+}
+
+.text h1 {
+  font-family: "AlphaCentauri" !important;
+  font-size: 5vw;
+  color: #fff;
+  letter-spacing: 20px;
+  position: absolute;
+  top: 35vh;
+  left: 34vw;
+}
+
+.earth img {
+  width: 400px;
+  height: 400px;
+  position: absolute;
+  left: 34vw;
+  top: 25vh;
+  z-index: 1;
+  -webkit-filter: brightness(0.7);
+          filter: brightness(0.7);
+}
+
+.mid {
+  left: -150px !important;
+  bottom: -100px !important;
+  top: unset !important;
+}
+
+.mid img {
+  width: 100%;
+  z-index: 2;
+  left: -20px;
+  top: 20vh !important;
+  -webkit-filter: brightness(0.8);
+          filter: brightness(0.8);
+}
+
+.foreground {
+  right: -50px !important;
+  bottom: -200px !important;
+  top: 0px !important;
+  left: unset !important;
+}
+
+.foreground img {
+  width: 400px;
+  height: 110vh;
+  z-index: 3;
+  -webkit-filter: brightness(0.5);
+          filter: brightness(0.5);
+}
+
+/* Swiper */
+#section-two {
+  width: 100%;
+  height: 100vh;
+  position: relative;
+}
+
+.rock__bg1 {
+  position: absolute;
+  -webkit-filter: brightness(0.2);
+          filter: brightness(0.2);
+  top: 20vh;
+  left: 50%;
+  -webkit-transform: scale(0.5) translateX(-50%);
+          transform: scale(0.5) translateX(-50%);
+  z-index: -1;
+}
+
+.planet__links {
+  width: 95%;
+  height: 5vh;
+  color: #fff;
+  position: absolute;
+  bottom: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  list-style: none;
+}
+
+.planet__links .swiper-pagination-bullet {
+  opacity: 0.2;
+  outline: none;
+}
+
+.planet__links .swiper-pagination-bullet-active {
+  color: #fff;
+  opacity: 1;
+}
+
+.swiper-pagination-clickable .swiper-pagination-bullet {
+  background: transparent;
+}
+
+.swiper-container {
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  padding: 50px 0;
+}
+
+.swiper-wrapper {
+  -webkit-transition-delay: 0.5s;
+          transition-delay: 0.5s;
+}
+
+.swiper-slide {
+  height: 400px !important;
+  width: 90% !important;
+  background: transparent;
+}
+
+.swiper-slide:nth-child(1) .slide-image {
+  background-image: url("/assets/images/mercury.png");
+}
+
+.swiper-slide:nth-child(2) .slide-image {
+  background-image: url("/assets/images/venus.png");
+}
+
+.swiper-slide:nth-child(3) .slide-image {
+  background-image: url("/assets/images/earth.png");
+}
+
+.swiper-slide:nth-child(4) .slide-image {
+  background-image: url("/assets/images/mars.png");
+}
+
+.swiper-slide:nth-child(5) .slide-image {
+  background-image: url("/assets/images/jupiter.png");
+}
+
+.swiper-slide:nth-child(6) .slide-image {
+  background-image: url("/assets/images/saturn.png");
+}
+
+.swiper-slide:nth-child(7) .slide-image {
+  background-image: url("/assets/images/uranus.png");
+}
+
+.swiper-slide:nth-child(8) .slide-image {
+  background-image: url("/assets/images/neptune.png");
+}
+
+.slide-image {
+  background-position: "center";
+  background-repeat: no-repeat !important;
+  background-size: contain;
+  width: 30%;
+  height: 100%;
+}
+
+.slide-number {
+  position: absolute;
+  top: -30px;
+  left: 30%;
+  z-index: 10;
+  width: 200px;
+  height: 120px;
+  overflow: hidden;
+}
+
+.slide-number p {
+  font-size: 40px;
+  font-family: "AlphaCentauri" !important;
+  color: #fff;
+  position: relative;
+}
+
+.slide-number p span {
+  position: absolute;
+}
+
+.slide-detail {
+  position: absolute;
+  top: 130px;
+  left: 30%;
+  z-index: 10;
+  width: 50%;
+  height: 400px;
+  overflow: hidden;
+}
+
+.slide-detail p {
+  font-size: 14px;
+  color: #fff;
+  position: relative;
+  opacity: 0.8;
+  line-height: 30px;
+}
+
+.slide-detail p span {
+  position: absolute;
+}
+
+.slide-detail-facts {
+  position: absolute;
+  top: 240px;
+  left: 30%;
+  z-index: 10;
+  width: 50%;
+  height: 400px;
+  overflow: hidden;
+  color: #fff;
+}
+
+.slide-detail-facts div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
+}
+
+.slide-detail-facts div h5 {
+  margin-right: 20px;
+}
+
+.slide-text {
+  position: absolute;
+  top: -150px;
+  left: 22%;
+  z-index: 9;
+  width: 200px;
+  height: 400px;
+  overflow: hidden;
+  opacity: 0.1 !important;
+}
+
+.slide-text h4 {
+  color: #fff;
+  font-size: 100px;
+  position: relative;
+}
+
+.slide-text h4 span {
+  position: absolute;
+}
+/*# sourceMappingURL=styles.css.map */
